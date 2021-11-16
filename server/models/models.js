@@ -84,27 +84,3 @@ module.exports = {
     TypeBrand,
     DeviceInfo
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Device.hasMany(DeviceInfo)
-// DeviceInfo.belongsTo(Device)
