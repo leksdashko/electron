@@ -67,7 +67,7 @@ const Auth = observer(() => {
                         }
                         <Button 
                             className="mt-3 align-self-end"
-                            onClick={click}
+                            onClick={() => click()}
                         >
                             {isLogin ? 'Login' : 'Registration'}
                         </Button>
