@@ -2,21 +2,9 @@ import {makeAutoObservable} from 'mobx';
 
 export default class DeviceStore {
     constructor(){
-        this._types = [
-            {id:1, name:'TV'},
-            {id:2, name:'Smartphone'},
-            {id:3, name:'Laptops'}
-        ]
-        this._brands = [
-            {id:1, name:'Apple'},
-            {id:2, name:'Samsung'}
-        ]
-        this._devices = [
-            {id:1, name:'Iphone 12 pro', price:1500, rating: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTj14U7hPi4ul4_XKLWQ8lU6007wGZFQXuPg&usqp=CAU'},
-            {id:2, name:'Iphone 12 pro', price:1500, rating: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTj14U7hPi4ul4_XKLWQ8lU6007wGZFQXuPg&usqp=CAU'},
-            {id:3, name:'Iphone 12 pro', price:1500, rating: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTj14U7hPi4ul4_XKLWQ8lU6007wGZFQXuPg&usqp=CAU'},
-            {id:4, name:'Iphone 12 pro', price:1500, rating: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTj14U7hPi4ul4_XKLWQ8lU6007wGZFQXuPg&usqp=CAU'}
-        ]
+        this._types = []
+        this._brands = []
+        this._devices = []
         this._selectedType = {}
         this._selectedBrand = {}
         makeAutoObservable(this)
